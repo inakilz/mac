@@ -4,6 +4,7 @@
  * Supported Windows/LINUX system.
  *
  * @return string
+ *   The MAC address.
  */
 
 function getMacAddress() {
