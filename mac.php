@@ -16,5 +16,4 @@ function getMacAddress() {
     	return shell_exec("/usr/sbin/arp -a | awk '{print $4}'");
     }
 }
-
 ?>
