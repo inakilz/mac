@@ -14,8 +14,9 @@ function getMacAddress() {
     return $match ? $matches[1] : NULL;
   }
   else {
-    return shell_exec("/usr/sbin/arp -a | awk '{print $4}'");
+    return shell_exec("/usr/sbin/arp -a | awk 'NR==1 {print $4}'");
   }
 }
 
+echo getMacAddress();
 ?>
